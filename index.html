@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sahyadri Dairy Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">🐮 Sahyadri Dairy Farm Dashboard</div>
+
+<h2>Cow Details</h2>
+
+<div class="top-controls">
+  <button id="expenseBtn" class="main-btn">
+    📊 View Farm Analytics
+  </button>
+
+  <input id="searchBox" placeholder="Search cow, breed, status..." class="searchBox">
+</div>
+
+<div class="container" id="cardContainer"></div>
+
+<!-- COW POPUP -->
+<div id="popup" class="popup">
+  <div class="popup-box">
+    <button class="closeBtn" onclick="closeCowPopup()">Close</button>
+    <h2 id="cowName"></h2>
+
+    <div id="cowBasicBox" class="sectionBox"></div>
+    <div id="cowHealthBox" class="sectionBox"></div>
+    <div id="cowPregBox" class="sectionBox"></div>
+    <div id="cowLactBox" class="sectionBox"></div>
+  </div>
+</div>
+
+<!-- EXPENSE POPUP -->
+<div id="expensePopup" class="popup">
+  <div class="popup-box">
+    <button class="closeBtn" onclick="closeExpensePopup()">Close</button>
+    <h2>Farm Analytics & Financial Dashboard</h2>
+
+    <div id="summaryCards" class="summaryRow"></div>
+
+    <div class="filters">
+      <label>Year From:</label>
+      <select id="yearFrom"></select>
+
+      <label>Year To:</label>
+      <select id="yearTo"></select>
+
+      <label>Category:</label>
+      <select id="expCategory"><option value="">All</option></select>
+    </div>
+
+    <div id="expenseData"></div>
+
+    <!-- CHARTS -->
+    <div class="charts-grid">
+      <canvas id="expenseBarChart"></canvas>
+      <canvas id="expensePieChart"></canvas>
+      <canvas id="incomeExpenseChart"></canvas>
+      <canvas id="milkLineChart"></canvas>
+      <canvas id="monthlyMilkChart"></canvas>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
