@@ -1,12 +1,13 @@
 /* --------------------- SHEET LINKS -------------------- */
 const cowCsvUrl =
-  "YOUR_COW_SHEET_LINK";
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vSFLGioCUdZbAR_v2KaInBD_GVts9csvUr4Mzz6s5_p1YSAcLPPRg16bnO-9s5UKjb_rqECjzMqAGgd/pub?gid=249634938&single=true&output=csv";
 
 const expenseCsvUrl =
-  "YOUR_EXPENSE_SHEET_LINK";
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vSFLGioCUdZbAR_v2KaInBD_GVts9csvUr4Mzz6s5_p1YSAcLPPRg16bnO-9s5UKjb_rqECjzMqAGgd/pub?gid=1547099893&single=true&output=csv";
 
 const milkCsvUrl =
-  "YOUR_MILK_SHEET_LINK";
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vSFLGioCUdZbAR_v2KaInBD_GVts9csvUr4Mzz6s5_p1YSAcLPPRg16bnO-9s5UKjb_rqECjzMqAGgd/pub?gid=2081043536&single=true&output=csv";
+
 
 /* --------------------- GLOBAL STATE -------------------- */
 let cowRows = [];
@@ -384,3 +385,4 @@ function drawMilkCharts() {
     }
   });
 }
+
